@@ -11,11 +11,11 @@ html {
 body {
   font-family: Montserrat, sans-serif;
   line-height: 1.8;
-  background-color: #FEEEEE;
-    margin-bottom: 60px;
+  background-color: #131d4a;
+  margin-bottom: 60px;
 }
 footer {
-  background-color: #C06E5D;
+  background-color: #327E8C;
   color: white;
   font-family: Roboto, sans-serif;
   padding: 15px;
@@ -28,17 +28,31 @@ h1 {
 }
 
 .header {
-  background-image: url("../images/background.png");
+  /* background-image: url("../images/background.png"); */
+  /* margin-top: -45px; */
+
 }
 .banner {
-  width: 60%;
-  max-width: 1000px;
+  width: 0;
+  max-width: 500px;
   padding-top: 5vw;
   padding-bottom: 5vw;
-  display: block;
+  position: absolute;
+  width: 30%;
   margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index:5;
 }
-
+.header_background {
+  width: 100%;
+  z-index: 0;
+}
+/* .banner_combo {
+  width: 100%;
+  margin-top: 10px;
+} */
 .divider {
   text-align: center;
   padding: 15px;
@@ -49,8 +63,9 @@ h1 {
 }
 .nav_bar {
   font-family: Roboto, sans-serif;
-  background-color: #C06E5D;
+  background-color: #327E8C;
   text-align: center;
+  margin-top: -40px;
 }
 .nav_bar li a {
   text-decoration: none;
@@ -65,7 +80,7 @@ h1 {
   margin: auto;
 }
 .nav_bar li a:hover {
-  color: #733022;
+  color: #0E366A;
   transition: all 0.5s;
 }
 
@@ -80,7 +95,7 @@ h1 {
 }
 
 .text {
-  background-color: white;
+  background-color: #F2F2F2;
   width: 80%;
   max-width: 1000px;
   display: block;
@@ -88,6 +103,11 @@ h1 {
   margin-top: 50px;
   padding: 50px;
   padding-bottom: 8vw;
+}
+.quote {
+  background-color: #0e366ab0;
+  color: white;
+  padding: 10px;
 }
 
 /* CHANGE CONTACTS */
@@ -98,7 +118,6 @@ h1 {
 }
 .contacts p {
   margin-top: 0;
-  text
 }
 .contacts img {
   width: 100%;
@@ -134,48 +153,10 @@ h1 {
   margin: auto;
 }
 
-/* contact */
-#contact-area {
-  max-width: 500px;
-  min-width: 235px;
-  width: 50%;
-  margin: 20px auto 0 auto;
-}
-#contact-area input, #contact-area textarea {
-  background-color: white;
-  color: grey;
-  width: 100%;
-  font-family: Poppins, sans-serif;
-  padding: 5px;
-  margin: 5px 5px 10px 0;
-}
-#contact-area input.submit-button {
-  background-color: #1C1713;
-  display: block;
-
-  text-align: center;
-  border-radius: 30px;
-  border: 3px solid #A0AE11;
-  /* display: block; */
-  padding: 10px;
-  font-size: 15px;
-  font-weight: bold;
-  color: #A0AE11;
-  text-transform: uppercase;
-  margin: 30px auto 10px auto;
-  width: 200px;
-  font-family: Poppins, sans-serif;
-}
-#contact-area input.submit-button:hover {
-  color: white;
-  background-color: #A0AE11;
-  transition: all 0.3s;
-}
-
 /* interactive media */
 @media screen and (max-width: 1000px) {
   .banner {
-    width: 70%;
+
   }
   .contacts {
     grid-template-columns: 1fr;
@@ -192,23 +173,31 @@ h1 {
     width: 240px;
   }
   .banner {
-    width: 90%;
+    width: 40%;
+    padding-top: 0;
   }
   .text {
     padding: 10px;
     padding-bottom: 40px;
     width: 90%;
   }
+  /* .banner_combo {
+    margin-top: 40px;
+  } */
+  .nav_bar {
+    margin-top: 0px;
+  }
 
   #menuToggle
   {
     display: block;
     position: relative;
-    background-color: #C06E5D;
+    background-color: #327E8C;
      z-index: 1;
      padding: 15px;
     -webkit-user-select: none;
     user-select: none;
+    margin-top: -10px;
   }
 
   #menuToggle input
