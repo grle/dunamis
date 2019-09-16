@@ -11,34 +11,32 @@ html {
 body {
   font-family: Montserrat, sans-serif;
   line-height: 1.8;
-  background-color: #131d4a;
+  /* background-color: #131d4a; */
   margin-bottom: 60px;
 }
 footer {
-  background-color: #327E8C;
+  background-color: #CC663A;
   color: white;
   font-family: Roboto, sans-serif;
   padding: 15px;
+  margin-top: 5vw;
 }
 h1 {
-  font-size: 1.5em;
+  font-size: 2.5em;
+  padding: 0;
+  margin: 0;
 }
 * {
   box-sizing: border-box;
 }
 
-.header {
-  /* background-image: url("../images/background.png"); */
-  /* margin-top: -45px; */
-
-}
 .banner {
   width: 0;
-  max-width: 500px;
-  padding-top: 5vw;
-  padding-bottom: 5vw;
+  /* max-width: 500px; */
+  padding-top: 16vw;
+  /* padding-bottom: 7vw; */
   position: absolute;
-  width: 30%;
+  width: 50%;
   margin: auto;
   left: 0;
   right: 0;
@@ -49,13 +47,25 @@ h1 {
   width: 100%;
   z-index: 0;
 }
-/* .banner_combo {
-  width: 100%;
-  margin-top: 10px;
-} */
+
 .divider {
   text-align: center;
   padding: 15px;
+}
+.center_me {
+  text-align: center;
+}
+
+.colorblock {
+  background-color: #FAF1ED;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+}
+.index_flower img {
+  margin-top: -100px;
+  margin-right: 150px;
 }
 
 #menuToggle input {
@@ -63,7 +73,7 @@ h1 {
 }
 .nav_bar {
   font-family: Roboto, sans-serif;
-  background-color: #327E8C;
+  background-color: #CC663A;
   text-align: center;
   margin-top: -40px;
 }
@@ -80,7 +90,7 @@ h1 {
   margin: auto;
 }
 .nav_bar li a:hover {
-  color: #0E366A;
+  color: black;
   transition: all 0.5s;
 }
 
@@ -95,19 +105,14 @@ h1 {
 }
 
 .text {
-  background-color: #F2F2F2;
+  /* background-color: #FAF1ED; */
   width: 80%;
   max-width: 1000px;
   display: block;
   margin: auto;
-  margin-top: 50px;
+  /* margin-top: 50px;
   padding: 50px;
-  padding-bottom: 8vw;
-}
-.quote {
-  background-color: #0e366ab0;
-  color: white;
-  padding: 10px;
+  padding-bottom: 8vw; */
 }
 
 /* CHANGE CONTACTS */
@@ -115,6 +120,9 @@ h1 {
   display: grid;
   grid-template-columns: 40% 60%;
   grid-gap: 20px;
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
 }
 .contacts p {
   margin-top: 0;
@@ -122,9 +130,26 @@ h1 {
 .contacts img {
   width: 100%;
 }
+.welcome {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-gap: 40px;
+}
+.welcome img {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 100%;
+  max-width: 200px;
+}
+
+.flowergroup {
+  margin: auto;
+  width: 500px;
+  display: block;
+}
 
 .button {
-  background-color: #246684;
+  background-color: #CC663A;
   text-decoration: none;
   display: block;
   text-align: center;
@@ -137,10 +162,10 @@ h1 {
   font-family: Montserrat, sans-serif;
 }
 .button:hover {
-  color: #246684;
+  color: #CC663A;
   background-color: white;
   padding: 7px;
-  border: 3px solid #246684;
+  border: 3px solid #CC663A;
 }
 
 .button_bloc {
@@ -154,16 +179,22 @@ h1 {
 }
 
 /* interactive media */
-@media screen and (max-width: 1000px) {
-  .banner {
-
+@media screen and (max-width: 1600px) {
+  .flower_left {
+    display: none;
   }
-  .contacts {
+}
+
+@media screen and (max-width: 1000px) {
+  .contacts, .welcome {
     grid-template-columns: 1fr;
     grid-gap: 20px;
   }
   .contacts img {
     width: 50%;
+  }
+  .flower_left {
+    display: none;
   }
 }
 
@@ -172,27 +203,34 @@ h1 {
     grid-template-columns: 1fr;
     width: 240px;
   }
-  .banner {
-    width: 40%;
-    padding-top: 0;
-  }
   .text {
     padding: 10px;
-    padding-bottom: 40px;
+    /* padding-bottom: 40px; */
     width: 90%;
   }
-  /* .banner_combo {
-    margin-top: 40px;
-  } */
   .nav_bar {
     margin-top: 0px;
+  }
+  .banner {
+    padding-top: 11vw;
+    width: 80%;
+  }
+  .flower_right {
+    display: none;
+  }
+  .index_flower img {
+    margin-top: -80px;
+    margin-right: 80px;
+  }
+  .flowergroup {
+    width: 300px;
   }
 
   #menuToggle
   {
     display: block;
     position: relative;
-    background-color: #327E8C;
+    background-color: #CC663A;
      z-index: 1;
      padding: 15px;
     -webkit-user-select: none;
