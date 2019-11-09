@@ -63,6 +63,7 @@ h1 {
   padding-top: 5vw;
   padding-bottom: 5vw;
 }
+
 .index_flower img {
   margin-top: -100px;
   margin-right: 150px;
@@ -177,7 +178,33 @@ h1 {
 .center {
   margin: auto;
 }
+.bottom-space {
+  /* padding-bottom: 10vw; */
+  margin-bottom: 10vw;
+}
 
+/* .ministry {
+  font-family: Roboto, sans-serif;
+  background-color: #CC663A;
+  margin-top: -10px;
+  text-align: left;
+}
+.ministry li a {
+  text-decoration: none;
+  color: white;
+}
+.ministry li a.accent {
+  border-bottom: 2px solid white;
+}
+.ministry li {
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  margin: auto;
+}
+.ministry li a:hover {
+  color: black;
+  transition: all 0.5s;
+} */
 /* interactive media */
 @media screen and (max-width: 1600px) {
   .flower_left {
@@ -202,6 +229,7 @@ h1 {
   .button_bloc {
     grid-template-columns: 1fr;
     width: 240px;
+    padding-bottom: 5vw;
   }
   .text {
     padding: 10px;
