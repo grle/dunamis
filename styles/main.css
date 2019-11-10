@@ -162,6 +162,7 @@ h1 {
   width: 200px;
   font-family: Montserrat, sans-serif;
 }
+
 .button:hover {
   color: #CC663A;
   background-color: white;
@@ -169,6 +170,14 @@ h1 {
   border: 3px solid #CC663A;
 }
 
+.disable {
+  background-color: grey;
+}
+.disable:hover {
+  color: white;
+  background-color: grey;
+  border: 3px solid grey;
+}
 .button_bloc {
   display: grid;
   grid-template-columns: 1fr 1fr;
